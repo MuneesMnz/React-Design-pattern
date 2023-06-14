@@ -1,4 +1,6 @@
-import { Parent } from "./Components/ListItem/Parent";
+// import { Parent } from "./Components/ListItem/Parent";
+
+import { Parent } from "./Components/MOdal/Parent";
 
 // import { Parent } from './Components/SplitScreen/Parent';
 
@@ -8,7 +10,11 @@ function App() {
     // <Parent/>
 
     //List Item
-    <Parent/>
+    // <Parent/>
+
+    // Modal 
+    <Parent />
+
 
   );
 }
