@@ -1,6 +1,9 @@
 // import { Parent } from "./Components/ListItem/Parent";
 
-import { Parent } from "./Components/MOdal/Parent";
+import { ControlledForm } from "./Components/Controlled/ControlledForm";
+import { UncontrolledForm } from "./Components/Uncontrolled/UncontrolledForm";
+
+// import { Parent } from "./Components/MOdal/Parent";
 
 // import { Parent } from './Components/SplitScreen/Parent';
 
@@ -13,7 +16,14 @@ function App() {
     // <Parent/>
 
     // Modal 
-    <Parent />
+    // <Parent />
+
+    // Uncontrolled Form 
+    // <UncontrolledForm />
+
+    // Controlled Form 
+    <ControlledForm />
+
 
 
   );
