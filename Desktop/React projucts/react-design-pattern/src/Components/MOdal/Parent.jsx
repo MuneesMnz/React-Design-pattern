@@ -13,7 +13,7 @@ const person=  {
 export const Parent = () => {
   return (
     <Modal>
-        <SmallPeopleLIstItem person={person} />
+        <SmallPeopleLIstItem person={person} pp={ss} ikjhk={sdds} />
     </Modal>
   )
 }

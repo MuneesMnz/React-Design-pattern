@@ -28,6 +28,9 @@ const person=  {
 
 export const ControlledModal = ({shouldShow,onRequsetClose,children}) => {
 
+    //using controlled modal we can use Its buttonfrom outside and close function call also out side 
+    //So we can use simple modal from this 
+
     return shouldShow ?(
               <ModelBackground onClick={()=>onRequsetClose()}>
                   <ModelBody onClick={e=>e.stopPropagation()}>

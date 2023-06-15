@@ -31,7 +31,7 @@ export const UncontrolledModal = ({children}) => {
     const [Show, setShow] = useState(false)
     return (
       <>
-      <button onClick={()=>setShow(true)}>Open UncontrolledModal Model</button>
+      <button onClick={()=>setShow(true)}>Open UnControlledModal Model</button>
       {
           Show && (
               <ModelBackground onClick={()=>setShow(false)}>
