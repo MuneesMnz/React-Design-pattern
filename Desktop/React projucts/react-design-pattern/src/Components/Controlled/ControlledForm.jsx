@@ -30,11 +30,15 @@ export const ControlledForm = () => {
     <form onSubmit={handleSubmit}>
         <input name="name" type="text" placeholder='Name'
         value={name} onChange={e=>setName(e.target.value)} />
+
         {nameError&& <p>{nameError}</p> }
+
         <input name="age" type="number" placeholder='age' 
         value={age} onChange={e=>setage(e.target.value)} />
+
         <input name="haircolor" type="text" placeholder='Hair Color' 
         value={hairColor} onChange={e=>setHairColor(e.target.value)} />
+        
         <button  >Submit</button>
     </form>
   )
