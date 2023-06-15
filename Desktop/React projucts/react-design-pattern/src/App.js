@@ -2,12 +2,12 @@
 
 // import { ControlledForm } from "./Components/Controlled/ControlledForm";
 // import { UncontrolledForm } from "./Components/Uncontrolled/UncontrolledForm";
-// import { useState } from "react";
 // import { ControlledModal } from "./Components/Controlled/ControlledModel";
 // import { SmallPeopleLIstItem } from "./Components/ListItem/People/SmallPeopleLIstItem";
 // import { UncontrolledModal } from "./Components/Uncontrolled/UncontrolledModal";
 import { useState } from "react";
 import { ControlledOnboardingFlow } from "./Components/Controlled/ControlledOnboardingFlow";
+import { UserInfo } from "./Components/CustomHook/UserInfo";
 // import { UnControlledOnboardingFlow } from "./Components/Uncontrolled/UnControlledOnboardingFlow";
 
 // import { Parent } from "./Components/MOdal/Parent";
@@ -65,8 +65,10 @@ function App() {
    setCurrentIndex(currentIndex + 1)
    console.log(onBoardingData);
 }
-  
-  return (
+//  return(
+// <>
+
+ 
     //Split Screen 
     // <Parent/>
 
@@ -97,33 +99,44 @@ function App() {
 
   //  </div>
 
-  <div>
+  // <div>
 
     {/* Uncontrolled OnBoarding Flow  */}
 
-    {/* <UnControlledOnboardingFlow onFinish={data=>{
+    /* <UnControlledOnboardingFlow onFinish={data=>{
       console.log(data)
       alert('OnBoarding Finish')
     }}>
       <StepOne />
       <StepTwo/>
       <StepThree />
-    </UnControlledOnboardingFlow> */}
+    </UnControlledOnboardingFlow> */
 
-    {/* Controlled OnBoarding Flow  */}
+    /* Controlled OnBoarding Flow  */
 
-    <ControlledOnboardingFlow onFinish={data=>{
+    {/* <ControlledOnboardingFlow onFinish={data=>{
       console.log(data)
       alert('OnBoarding Finish')
     }} onNext={onNext} currentIndex={currentIndex}>
       <StepOne />
       <StepTwo/>
       <StepThree />
-    </ControlledOnboardingFlow>
+    </ControlledOnboardingFlow> */}
+  {/* </div> */}
+
+  // </>
+  // )
+ return(
+  <div>
+    {/* UseCurrentUser  */}
+    <UserInfo />
+
+
   </div>
+ )
 
 
-  );
+  
 }
 
 export default App;
