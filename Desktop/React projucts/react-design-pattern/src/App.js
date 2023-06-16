@@ -8,6 +8,9 @@
 import { useState } from "react";
 import { ControlledOnboardingFlow } from "./Components/Controlled/ControlledOnboardingFlow";
 import { UserInfo } from "./Components/CustomHook/UserInfo";
+import { BigSuccessButton, DangerButton } from "./Components/Functional Programming/Composition";
+import { DangerButtonPartial, SuccessButtonPartial } from "./Components/Functional Programming/partialyApply";
+import { RecursiveComponents } from "./Components/Functional Programming/RecursiveComponents";
 // import { UnControlledOnboardingFlow } from "./Components/Uncontrolled/UnControlledOnboardingFlow";
 
 // import { Parent } from "./Components/MOdal/Parent";
@@ -46,8 +49,32 @@ const StepThree=({goToNext})=>{
       <button onClick={()=>goToNext({hairColor:"Black"})} >Next</button>
       </>
     )
-    }  
+    }
+    
+    const nestedObject={
+      a:1,
+      b:{
+        b1:4,
+        b2:{
+          b23:"hello"
+        },
+        b3:{
+          b31:{
+            message:'Hi'
+          },
+          b32:{
+            message:'Hi'
+          }
+        }
+      },
+      c:{
+        c1:2,
+        c2:3
+      }
+    }
 
+
+    
 
 function App() {
   // Controlled Model State And Functions
@@ -129,7 +156,15 @@ function App() {
  return(
   <div>
     {/* UseCurrentUser  */}
-    <UserInfo />
+    {/* <UserInfo /> */}
+
+    <RecursiveComponents data={nestedObject} />
+    <DangerButton text="Don't Do it" />
+    <BigSuccessButton text='here you go' />
+    <div>
+      <DangerButtonPartial text="partial Button" />
+      <SuccessButtonPartial text="partial Button" />
+    </div>
 
 
   </div>
