@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export const LargePeopleListItem = ({person,number}) => {
     const {name,age,hairColor,hobbies}=person
